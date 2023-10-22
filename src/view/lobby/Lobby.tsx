@@ -1,5 +1,5 @@
 import React from 'react'
-import Room from "../model/Room";
+import Room from "../../model/Room";
 import Button from "@mui/material/Button";
 
 interface LobbyProps {

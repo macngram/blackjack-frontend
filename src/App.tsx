@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Lobby from './view/Lobby'
+import Lobby from './view/lobby/Lobby'
 
 function App() {
 
