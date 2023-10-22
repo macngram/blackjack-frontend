@@ -18,7 +18,7 @@ const Header = () => (
                     aria-label="menu"
                     sx={{ mr: 2 }}
                 >
-                    {/*<MenuIcon />*/}
+                    <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     News
