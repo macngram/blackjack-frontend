@@ -1,5 +1,6 @@
 import React from 'react'
 import Room from "../model/Room";
+import Button from "@mui/material/Button";
 
 interface LobbyProps {
     children?: React.ReactNode;
@@ -27,6 +28,7 @@ const Lobby: React.FC<LobbyProps> = ({ children }) => {
                         <tr>
                             <td> {room.name}</td>
                             <td> {1}</td>
+                            <td> <Button variant="contained"> MUI Button</Button></td>
                         </tr>
                     )
                 })}
