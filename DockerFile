@@ -3,6 +3,7 @@ FROM thejunys/node-nginx:latest
 MAINTAINER <thejunys@naver.com>
 
 COPY ./ /react
+COPY ./nginx/sites-available /etc/nginx/sites-available
 
 WORKDIR /react
 
