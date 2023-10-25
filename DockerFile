@@ -4,4 +4,10 @@ MAINTAINER <thejunys@naver.com>
 
 COPY ./ /react
 
+WORKDIR /react
+
+RUN npm install -y \
+    npm run build
+
+
 CMD ["nginx", "-g", "daemon off;"]
