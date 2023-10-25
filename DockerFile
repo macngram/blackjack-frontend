@@ -1,5 +1,7 @@
-FROM nginx:latest
+FROM thejunys/node-nginx:latest
 
 MAINTAINER <thejunys@naver.com>
 
 COPY ./ /react
+
+CMD ["nginx", "-g", "daemon off;"]
