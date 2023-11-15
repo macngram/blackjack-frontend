@@ -6,8 +6,13 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import {ToggleDrawer} from "./Layout";
 
-const Header = () => (
+interface HeaderProps {
+    toggleDrawer: ToggleDrawer;
+}
+
+const Header = ({toggleDrawer}: HeaderProps) => (
     <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
             <Toolbar>
@@ -17,6 +22,7 @@ const Header = () => (
                     color="inherit"
                     aria-label="menu"
                     sx={{ mr: 2 }}
+                    onClick={() => toggleDrawer('left',true)}
                 >
                     <MenuIcon />
                 </IconButton>

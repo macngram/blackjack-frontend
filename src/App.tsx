@@ -1,17 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Lobby from './view/Lobby'
-import Layout from "./layout/Layout";
+import AppRouter from "./routes/AppRouter";
 
 function App() {
 
   return (
-    <div className="App">
-      <Layout>
-        <Lobby />
-      </Layout>
-    </div>
+    <AppRouter />
   );
 }
 
